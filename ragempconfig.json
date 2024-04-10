@@ -4,7 +4,7 @@
         "Category": "Server Settings",
         "Description": "",
         "Keywords": "slot,limit",
-        "FieldName": "$maxplayers",
+        "FieldName": "$MaxUsers",
         "InputType": "number",
         "IsFlagArgument": false,
         "ParamFieldName": "$maxplayers",
