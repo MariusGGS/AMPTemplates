@@ -91,7 +91,7 @@
         "Category": "Server Settings",
         "Description": "The IP to listen to. ",
         "Keywords": "bind",
-        "FieldName": "$ApplicationIPAddress",
+        "FieldName": "$ApplicationIPBinding",
         "InputType": "text",
         "IsFlagArgument": false,
         "ParamFieldName": "$.bind",
