@@ -1,12 +1,22 @@
 [
     {
-        "UpdateStageName": "Download RageMP",
+        "UpdateStageName": "Downloading RageMP",
         "UpdateSourcePlatform": "All",
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "https://cdn.rage.mp/updater/prerelease/server-files/linux_x64.tar.gz",
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": false,
         "DeleteAfterExtract": true,
+        "OneShot": false
+    }, 
+    {
+        "UpdateStageName": "Downloading Config",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://raw.githubusercontent.com/MariusGGS/AMPTemplates/ggservers/ragempconf.json",
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": true,
+        "DeleteAfterExtract": false,
         "OneShot": false
     },
     {
@@ -26,17 +36,6 @@
         "UpdateSource": "Executable",
         "UpdateSourceData": "/bin/bash",
         "UpdateSourceArgs": "-c '[[ -d {{$FullBaseDir}}ragemp-srv ]] && cp -Rf {{$FullBaseDir}}ragemp-srv/* {{$FullBaseDir}} && rm -rf {{$FullBaseDir}}ragemp-srv'",
-        "UnzipUpdateSource": false,
-        "OverwriteExistingFiles": false,
-        "DeleteAfterExtract": true,
-        "OneShot": false
-    },
-    {
-        "UpdateStageName": "Moving server files",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "Executable",
-        "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c '[[ ! -f {{$FullBaseDir}}ragemp-srv/conf.json ]] && wget https://raw.githubusercontent.com/MariusGGS/AMPTemplates/ggservers/ragempconf.json -O {{$FullBaseDir}}ragemp-srv/conf.json'",
         "UnzipUpdateSource": false,
         "OverwriteExistingFiles": false,
         "DeleteAfterExtract": true,
