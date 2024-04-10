@@ -12,6 +12,7 @@
     {
         "UpdateStageName": "Downloading Config",
         "UpdateSourcePlatform": "All",
+        "UpdateSourceTarget":"ragemp-srv/conf.json"
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "https://raw.githubusercontent.com/MariusGGS/AMPTemplates/ggservers/ragempconf.json",
         "UnzipUpdateSource": false,
