@@ -4,7 +4,6 @@
         "UpdateSourcePlatform": "All",
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "https://cdn.rage.mp/updater/prerelease/server-files/linux_x64.tar.gz",
-        "UpdateSourceTarget": "/",
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": false,
         "DeleteAfterExtract": true,
@@ -18,6 +17,17 @@
         "UnzipUpdateSource": false,
         "OverwriteExistingFiles": false,
         "UpdateSourceConditionValue": "",
+        "DeleteAfterExtract": true,
+        "OneShot": false
+    },
+    {
+        "UpdateStageName": "Moving server files",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/bash",
+        "UpdateSourceArgs": "-c 'mv -f {{$FullBaseDir}}ragemp-srv/ragemp-srv/\\* {{$FullBaseDir}}ragemp-srv/'",
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": false,
         "DeleteAfterExtract": true,
         "OneShot": false
     }
