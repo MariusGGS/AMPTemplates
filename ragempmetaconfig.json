@@ -1,6 +1,6 @@
 [
     {
-        "ConfigFile": "{{$FullBaseDir}}config.json",
+        "ConfigFile": "config.json",
         "ConfigType": "json",
         "AutoMap": true
     }
