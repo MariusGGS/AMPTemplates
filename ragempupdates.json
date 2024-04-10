@@ -7,7 +7,7 @@
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": false,
         "DeleteAfterExtract": true,
-        "OneShot": true
+        "OneShot": false
     },
     {
         "UpdateStageName": "Setting Executable flag",
