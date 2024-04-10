@@ -4,6 +4,7 @@
         "UpdateSourcePlatform": "All",
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "https://cdn.rage.mp/updater/prerelease/server-files/linux_x64.tar.gz",
+        "UpdateSourceTarget": "/",
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": false,
         "DeleteAfterExtract": true,
