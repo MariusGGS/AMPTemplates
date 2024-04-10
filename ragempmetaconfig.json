@@ -1,6 +1,6 @@
 [
     {
-        "ConfigFile": "config.json",
+        "ConfigFile": "conf.json",
         "ConfigType": "json",
         "AutoMap": true
     }
