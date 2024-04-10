@@ -1,6 +1,6 @@
 [
     {
-        "ConfigFile": "config.json",
+        "ConfigFile": "ragemp-srv/config.json",
         "ConfigType": "json",
         "AutoMap": true
     }
