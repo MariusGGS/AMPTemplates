@@ -9,8 +9,8 @@
     {
         "Protocol": "Both",
         "Port": "22006",
-        "Name": "Download Port",
-        "Description": "Port used for secondary game traffic",
+        "Name": "HTTP Port",
+        "Description": "Port used by players to download packages",
         "Ref": "GamePort2"
     }
 ]
