@@ -1,0 +1,23 @@
+[
+    {
+        "UpdateStageName": "Download RageMP",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://cdn.rage.mp/updater/prerelease/server-files/linux_x64.tar.gz",
+        "UnzipUpdateSource": true,
+        "OverwriteExistingFiles": false,
+        "DeleteAfterExtract": true,
+        "OneShot": true
+    },
+    {
+        "UpdateStageName": "Setting Executable flag",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "SetExecutableFlag",
+        "UpdateSourceArgs": "ragemp-srv/ragemp-server",
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": false,
+        "UpdateSourceConditionValue": "",
+        "DeleteAfterExtract": true,
+        "OneShot": false
+    }
+]
