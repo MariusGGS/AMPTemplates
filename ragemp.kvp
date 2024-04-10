@@ -53,7 +53,7 @@ App.Compatibility=None
 App.SteamWorkshopDownloadLocation={{$FullBaseDir}}undefined
 Console.FilterMatchRegex=
 Console.FilterMatchReplacement=
-Console.ThrowawayMessageRegex=\e\[(\d+;)*(\d+)?[ABCDHJKfmsu]|\e\[?[?\>\=\da-z]+
+Console.ThrowawayMessageRegex=\e\[(\d+)?[ABCDHJKfmsu]
 Console.UpdateAvailableRegex=^\[\d\d:\d\d:\d\d\] \[INFO\] A new server update is available! v[\d\.]+.$
 Console.SuppressLogAtStart=False
 Console.ActivateLogRegex=
