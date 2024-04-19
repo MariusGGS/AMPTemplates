@@ -12,13 +12,13 @@
     {
         "UpdateStageName": "Downloading Config",
         "UpdateSourcePlatform": "All",
-        "UpdateSourceTarget":"ragemp-srv/conf.json",
+        "UpdateSourceTarget":"ragemp-srv/",
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "https://raw.githubusercontent.com/MariusGGS/AMPTemplates/ggservers/ragempconf.json",
         "UnzipUpdateSource": false,
         "OverwriteExistingFiles": true,
         "DeleteAfterExtract": false,
-        "OneShot": false
+        "OneShot": true
     },
     {
         "UpdateStageName": "Setting Executable flag",
@@ -36,7 +36,7 @@
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Executable",
         "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c '[[ -d {{$FullBaseDir}}ragemp-srv ]] && cp -Rf {{$FullBaseDir}}ragemp-srv/* {{$FullBaseDir}} && rm -rf {{$FullBaseDir}}ragemp-srv'",
+        "UpdateSourceArgs": "-c '[[ -d {{$FullBaseDir}}ragemp-srv ]] && cp -Rf {{$FullBaseDir}}ragemp-srv/* {{$FullBaseDir}} && rm -rf {{$FullBaseDir}}ragemp-srv'; [[ -f {{$FullBaseDir}}ragempconf.json ]] && mv {{$FullBaseDir}}ragempconf.json {{$FullBaseDir}}conf.json",
         "UnzipUpdateSource": false,
         "OverwriteExistingFiles": false,
         "DeleteAfterExtract": true,
